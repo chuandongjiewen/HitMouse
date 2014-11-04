@@ -40,16 +40,19 @@ var AnimationLayer = cc.Layer.extend({
         //老鼠
         var mouse1 = new cc.Sprite(resource.mole_1);
         mouse1.attr({x : 200, y: 300});
+        mouse1.setTag(0);
         self.mouseList.push(mouse1);
         this.addChild(mouse1, 0);
 
         var mouse2 = new cc.Sprite(resource.mole_1);
         mouse2.attr({x : 515, y: 300});
+        mouse2.setTag(0);
         self.mouseList.push(mouse2);
         this.addChild(mouse2, 0);
 
         var mouse3 = new cc.Sprite(resource.mole_1);
         mouse3.attr({x : 815, y: 300});
+        mouse3.setTag(0);
         self.mouseList.push(mouse3);
         this.addChild(mouse3, 0);
 
